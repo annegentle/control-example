@@ -1,0 +1,2 @@
+/,https://github.com/rackerlabs/developer.rackspace.com
+/python-guide,https://github.com/kennethreitz/python-guide
