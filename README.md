@@ -28,8 +28,10 @@ Separate these two by whitespace on a single line per mapping. Here are two exam
 
 ```
 /  https://github.com/deconst/deconst-docs/
-/python-guide  https://github.com/kennethreitz/python-guide/
+/python-guide/  https://github.com/kennethreitz/python-guide/
 ```
+
+Path prefixes should start with a `/` and end with a `/`; content ID prefixes should end with an `/`. If you forget, though, it's okay, they'll be normalized that way during parsing.
 
 The *longest path prefix* in the mapping file that matches a specific request URL will be applied to generate the corresponding content ID. For example, given the mappings above:
 
