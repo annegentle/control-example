@@ -1,2 +1,5 @@
-/,https://github.com/rackerlabs/developer.rackspace.com
-/python-guide,https://github.com/kennethreitz/python-guide
+# A simple mapping of two content repositories.
+
+[mysite.com]
+/  https://github.com/deconst/deconst-docs/
+/python-guide  https://github.com/kennethreitz/python-guide/
