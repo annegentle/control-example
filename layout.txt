@@ -1,2 +1,34 @@
-/,https://github.com/rackerlabs/developer.rackspace.com
-/python-guide,https://github.com/kennethreitz/python-guide
+# Comments start with a "#" character. Whitespace-only lines are ignored.
+
+# Begin each file by specifying the domain that its mappings belong to, surrounded by square
+# brackets.
+
+# You may introduce a new domain at any time and it will be active until the end of the file
+# or another domain is specified. You must specify at least one before you introduce any mappings.
+
+[mysite.com]
+
+# Each mapping consists of:
+# - The destination path prefix; the location on the final, rendered site at which this content
+#   will be available.
+# - The "content ID" of the content to attach here. Generally, this will be the base URL of the
+#   git repository that houses the raw content.
+# Separate these two by whitespace on a single line.
+
+/  https://github.com/deconst/deconst-docs/
+/python-guide  https://github.com/kennethreitz/python-guide/
+
+# The *longest path prefix* in the mapping file that matches a specific request URL will be applied
+# to generate the corresponding content ID. For example, given the mappings above:
+#
+# "GET /running/architecture" will render:
+# "https://github.com/deconst/deconst-docs/running/architecture"
+#
+# "GET /python-guide/writing/gotchas" will render:
+# "https://github.com/kennethreitz/python-guide/writing/gotchas"
+
+# As your sites grow, you may distribute your mappings across many files and many directories within
+# the mapping repository. All files should end with the ".txt" suffix. This is purely for you: the
+# mapping service will concatenate them all to generate the final map. It's an error to attempt to
+# map anything to the same path prefix twice. This is to keep you from clobbering a previous mapping
+# without realizing it!
