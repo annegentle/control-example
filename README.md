@@ -21,8 +21,8 @@ You may introduce a new domain at any time and it will be active until the end o
 ### Mappings
 
 Each mapping consists of:
-* The destination path prefix; the location on the final, rendered site at which this content will be available.
-* The "content ID" of the content to attach here. Generally, this will be the base URL of the git repository that houses the raw content.
+* The presented path prefix; the location on the final, rendered site at which this content will be available.
+* The "content ID" prefix of the content to attach here. Generally, this will be the base URL of the git repository that houses the raw content.
 
 Separate these two by whitespace on a single line per mapping. Here are two examples:
 
