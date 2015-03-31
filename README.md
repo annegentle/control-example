@@ -49,4 +49,7 @@ It's an error to attempt to map anything to the same path prefix twice. This is 
 
 ## Layout File Format
 
-*To be created*
+The layout file format is very similar to the [map file format](#map-file-format). See [developer.rackspace.com.layout.txt](/developer.rackspace.com.layout.txt) for an example.
+
+The only difference between the map file format and the layout file format is that the layout file format has an additional parameter on each non-domain line that represents the layout name (which comes from the metadata envelope). The layout name is the second parameter on the line, between the presented path prefix and the location of the layout relative to the `layouts` directory in this repo.
+

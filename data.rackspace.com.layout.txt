@@ -1,0 +1,4 @@
+[data.rackspace.com]
+# These specify the concrete layouts for pages rendered on data.rackspace.com.
+/ page data/common-page.hbs
+/ blog-post data/blog-post.hbs
