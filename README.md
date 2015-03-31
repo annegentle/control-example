@@ -4,7 +4,7 @@ This repository is a prototype of the contents of a *control repository* used by
 
 ## Map File Format
 
-[`layout.map.txt`](/layout.map.txt) is a concrete example of the mapping format.
+[`content.map.txt`](/content.map.txt) is a concrete example of the content mapping format.
 
 Comments start with a `#` character. Whitespace-only lines are ignored.
 
