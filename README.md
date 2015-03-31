@@ -1,10 +1,10 @@
-# Map Repository Example
+# Control Repository Example
 
-This repository is a prototype of the contents of a *map repository* used by a deconst system. Its role is to specify in plain, human-readable and human-editable text, what content is rendered at any particular presented URL.
+This repository is a prototype of the contents of a *control repository* used by a deconst system. Its role is to specify in plain, human-readable and human-editable text, what content is rendered at any particular presented URL and with what layout. Content mapping is specified by *map files*, while layouts are specified by *layout files*. The layouts themselves are also stored in this repository as [Handlebars templates](http://handlebarsjs.com/) in the `layouts/` directory.
 
-## Format
+## Map File Format
 
-[`layout.txt`](/layout.txt) is a concrete example of the mapping format.
+[`content.map.txt`](/content.map.txt) is a concrete example of the content mapping format.
 
 Comments start with a `#` character. Whitespace-only lines are ignored.
 
@@ -41,8 +41,12 @@ The *longest path prefix* in the mapping file that matches a specific request UR
 
 ### Multiple Files
 
-As your sites grow, you may distribute your mappings across many files and many directories within the mapping repository. All files should end with the ".txt" suffix.
+As your sites grow, you may distribute your mappings across many files and many directories within the mapping repository. All files should end with the ".map.txt" suffix.
 
 This is purely for the organizational convenience of humans! The mapping service will simply concatenate them all to generate the final map.
 
 It's an error to attempt to map anything to the same path prefix twice. This is to keep you from clobbering a previous mapping without realizing it!
+
+## Layout File Format
+
+*To be created*
