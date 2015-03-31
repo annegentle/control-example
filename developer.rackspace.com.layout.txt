@@ -1,0 +1,10 @@
+[developer.rackspace.com]
+# All metadata envelopes that specify "layout: page" on developer.rackspace.com
+# will use the "layouts/drc/drc-page.hbs" layout in the map repository. Likewise,
+# "layout: blog-post" will use "layouts/drc/drc-blog-post.hbs".
+/ page drc/drc-page.hbs
+/ blog-post drc/drc-blog-post.hbs
+
+# Now pages under /developer-blog that specify "layout: blog-post" will use
+# "layouts/drc/developer/blog-post.hbs", instead.
+/developer-blog blog-post drc/developer/blog-post.hbs
